@@ -7,4 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  resources :users
+  resources :blog_contents
+
+  get "/me", to: "users#show"
+  get "/blog", to: "blog_contents#index"
 end
