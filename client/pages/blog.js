@@ -14,7 +14,7 @@ export default function Blog() {
     return (
         <div>
             <p>Title: {blog[0]?.title}</p>
-            <p>Body: {blog[0].body}</p>
+            <p>Body: {blog[0]?.body}</p>
         </div>
     )
 }
